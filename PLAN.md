@@ -43,7 +43,7 @@ _Filled in by T06._
 
 ## How we work (5 people, one repo)
 
-1. **Pick a task.** Open the [project board](https://github.com/Hardeep-vt/custom-crm/projects) or the [issue list](https://github.com/Hardeep-vt/custom-crm/issues). Take the lowest-numbered issue in **To do** whose *Depends on* issues are all closed.
+1. **Pick a task.** Open the [project board](https://github.com/users/Hardeep-vt/projects/1) or the [issue list](https://github.com/Hardeep-vt/custom-crm/issues). Take the lowest-numbered issue in **To do** whose *Depends on* issues are all closed.
 2. **Claim it.** Assign yourself and move it to **In progress**. Comment on the issue if you'll be slow. **One task per person at a time.**
 3. **Branch** from the latest `main`: `git checkout main && git pull && git checkout -b t12-company-list`.
 4. **Build it small.** Do only what the issue says. If you find more work, open a new issue rather than growing the PR.
