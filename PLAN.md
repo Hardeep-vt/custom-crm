@@ -33,13 +33,13 @@ custom-crm/
 
 ## Environments
 
-_Filled in by T06._
+Hosting accounts are planned under **Hardeep's account** (PLAN assumption A17). URLs are pending account setup and deployment. Store credentials only in provider dashboards; do not commit secrets.
 
-| | URL | Account owner |
+| Component | URL | Account owner |
 |---|---|---|
-| Web | TBD | TBD |
-| API | TBD | TBD |
-| DB | (Neon) | TBD |
+| Web (Vercel) | Pending deployment | Hardeep |
+| API (Render) | Pending deployment | Hardeep |
+| DB (Neon) | Pending deployment | Hardeep |
 
 ## How we work (5 people, one repo)
 
