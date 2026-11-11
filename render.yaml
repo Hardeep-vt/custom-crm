@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: custom-crm-api
+    runtime: python
+    rootDir: backend
+    branch: main
+    plan: free
+    buildCommand: uv sync --locked --no-dev
+    # Render's pre-deploy command requires a paid service; migrate before starting the free service.
+    startCommand: uv run --no-sync alembic upgrade head && uv run --no-sync uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false
